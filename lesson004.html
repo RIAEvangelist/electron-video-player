@@ -18,8 +18,8 @@
             function init(){
             //lmao you built and disnt use it... doofus
             //try it now
-              var myButton=document.getElementsByClassName('myButton');
-              var movingDiv=document.getElementsByClassName('movingDiv');
+              var myButton=document.getElementsByClassName('myButton')[0];
+              var movingDiv=document.getElementsByClassName('movingDiv')[0];
               movingDiv.classList.add('poop');
               bindEvents();
             }
@@ -30,6 +30,7 @@
             //WTF? thats jQuery. not JS. Haveou seen happy madison? JQUERYz da Debil!
             //haha i love that move. just taaap it in, tap tap tappy.
                 movingDiv.classList.toggle('poop');
+                movingDiv.classList.toggle('movingDiv');
             }
             //now its up do date!!
             function bindEvents(){
