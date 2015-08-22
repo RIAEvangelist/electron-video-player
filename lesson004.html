@@ -18,23 +18,25 @@
             function init(){
             //lmao you built and disnt use it... doofus
             //try it now
-              var myButton=document.getElementsByClassName('myButton')[0];
-              var movingDiv=document.getElementsByClassName('movingDiv')[0];
-                console.log(movingDiv);
-              movingDiv.classList.add('poop');
-              bindEvents();
-                console.log(movingDiv);
+                var myButton=document.getElementsByClassName('myButton')[0];
+                var movingDiv=document.getElementsByClassName('movingDiv')[0];
+                movingDiv.classList.add('poop');
+                bindEvents();
+                console.log("hello");
             }
 
 
             function moveit(e){
             //movingDiv.toggleclass("poop");
             //WTF? thats jQuery. not JS. Haveou seen happy madison? JQUERYz da Debil!
-            //haha i love that move. just taaap it in, tap tap tappy.
+            //haha i love that move. just taaap it in, tap tap tappy
+                var movingDiv=document.getElementsByClassName('movingDiv')[0];
+                movingDiv.classList.add('poop');
                 movingDiv.classList.toggle('poop');
             }
             //now its up do date!!
             function bindEvents(){
+                var myButton=document.getElementsByClassName('myButton')[0];
                 myButton.addEventListener(
                     'click',
                     moveit
