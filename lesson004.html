@@ -15,16 +15,14 @@
             function init(){
                 var myButton=document.getElementsByClassName('myButton')[0];
                 var movingDiv=document.getElementsByClassName('movingDiv')[0];
-                movingDiv.classList.add('poop');
                 bindEvents();
             }
 
-
             function moveit(e){
+
                 var movingDiv=document.getElementsByClassName('movingDiv')[0];
-                console.log("im here!");
-                setTimeout(
-                    movingDiv.classList.toggle('poop'),
+                setInterval(
+                    movingDiv.classList.toggle('poop') + console.log("intervalling.."),
                     100
                     );
             }
@@ -36,6 +34,7 @@
                     "click",
                     moveit
                 );
+
 
             }
         </script>
