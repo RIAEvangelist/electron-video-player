@@ -3,9 +3,9 @@
     <head>
     </head>
     <body>
-        <button class="myButton">:l</button>
+        <button class='myButton'>:l</button>
 
-        <script type ="text/javascript" >
+        <script type ='text/javascript' >
 
             window.addEventListener(
             	'DOMContentLoaded',
@@ -25,7 +25,7 @@
             }
 
             function bounce(){
-                console.log("intervalling..");
+                console.log('intervalling..');
                 var movingDiv=document.getElementsByClassName('movingDiv')[0];
                 movingDiv.classList.toggle('poop');
 
@@ -33,10 +33,10 @@
             }
 
             function bindEvents(){
-                var myButton=document.getElementsByClassName('myButton')[0];
+                var movingDiv=document.getElementsByClassName('movingDiv')[0];
 
-                myButton.addEventListener(
-                    "click",
+                movingDiv.addEventListener(
+                    'mouseover',
                     moveit
                 );
 
@@ -60,23 +60,24 @@
                 height: 20px;
             }
             .movingDiv{
+                position: absolute;
                 width:50px;
                 height:50px;
                 border-radius: 50%;
                 background-color:rgb(250,200,150);
-                margin-top: 40%;
-                margin-left: 100px;
+                top: 40%;
+                left: 100px;
                 transition: background-color ease-in-out 600ms,
                             border-redius ease-in-out 1000ms,
-                            margin-top ease-in-out 600ms,
-                            margin-left ease-in-out 1000ms;
+                            top ease-in-out 600ms,
+                            left ease-in-out 1000ms;
             }
             .poop{
                 width:90px;
                 border-radius: 20%;
                 height:90px;
-                margin-top: 5%;
-                margin-left: 10px;
+                top: 5%;
+                left: 10px;
                 background-color:rgb(150,0,200);
             }
 
@@ -84,7 +85,7 @@
 
         </style>
 
-        <div class="movingDiv">
+        <div class='movingDiv'>
         </div>
 
     </body>
