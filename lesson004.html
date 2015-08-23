@@ -13,22 +13,27 @@
           	)
 
             function init(){
-                var myButton=document.getElementsByClassName('myButton')[0];
-                var movingDiv=document.getElementsByClassName('movingDiv')[0];
                 bindEvents();
             }
 
             function moveit(e){
-
-                var movingDiv=document.getElementsByClassName('movingDiv')[0];
                 setTimeout(
-                    movingDiv.classList.toggle('poop') + console.log("intervalling.."),
-                    100
+                    bounce,
+                    600
                     );
+                bounce();
             }
+
+            function bounce(){
+                console.log("intervalling..");
+                var movingDiv=document.getElementsByClassName('movingDiv')[0];
+                movingDiv.classList.toggle('poop');
+
+                return true;
+            }
+
             function bindEvents(){
                 var myButton=document.getElementsByClassName('myButton')[0];
-                var movingDiv=document.getElementsByClassName('movingDiv')[0];
 
                 myButton.addEventListener(
                     "click",
@@ -44,6 +49,11 @@
                 width: 100%;
                 height: 100%;
             }
+
+            body *{
+                position:relative;
+            }
+
             .myButton{
                 align-content: center;
                 width:300px;
@@ -56,7 +66,10 @@
                 background-color:rgb(250,200,150);
                 margin-top: 40%;
                 margin-left: 100px;
-                transition:all ease-in-out 0.6s;
+                transition: background-color ease-in-out 600ms,
+                            border-redius ease-in-out 1000ms,
+                            margin-top ease-in-out 600ms,
+                            margin-left ease-in-out 1000ms;
             }
             .poop{
                 width:90px;
@@ -65,8 +78,8 @@
                 margin-top: 5%;
                 margin-left: 10px;
                 background-color:rgb(150,0,200);
-                transition:all ease-in-out 0.6s;
             }
+
 
 
         </style>
