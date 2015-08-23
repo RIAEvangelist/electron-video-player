@@ -7,42 +7,33 @@
 
         <script type ="text/javascript" >
 
-
-            //this would work but is bad form.
-            //doesnt work :(
             window.addEventListener(
             	'DOMContentLoaded',
             	init
           	)
 
             function init(){
-            //lmao you built and disnt use it... doofus
-            //try it now
                 var myButton=document.getElementsByClassName('myButton')[0];
                 var movingDiv=document.getElementsByClassName('movingDiv')[0];
                 movingDiv.classList.add('poop');
                 bindEvents();
-                console.log("hello");
             }
 
 
             function moveit(e){
-            //movingDiv.toggleclass("poop");
-            //WTF? thats jQuery. not JS. Haveou seen happy madison? JQUERYz da Debil!
-            //haha i love that move. just taaap it in, tap tap tappy
                 var movingDiv=document.getElementsByClassName('movingDiv')[0];
-                movingDiv.classList.add('poop');
+                console.log("im here!");
                 setTimeout(
                     movingDiv.classList.toggle('poop'),
                     100
                     );
             }
-            //now its up do date!!
             function bindEvents(){
                 var myButton=document.getElementsByClassName('myButton')[0];
                 var movingDiv=document.getElementsByClassName('movingDiv')[0];
+
                 myButton.addEventListener(
-                    'click',
+                    "click",
                     moveit
                 );
 
@@ -64,17 +55,19 @@
                 height:50px;
                 border-radius: 50%;
                 background-color:rgb(250,200,150);
-                top: 0px;
+                margin-top: 40%;
+                margin-left: 100px;
                 transition:all ease-in-out 0.6s;
             }
             .poop{
-                width:50px;
-                border-radius: 50%;
-                height:500px;
+                width:90px;
+                border-radius: 20%;
+                height:90px;
+                margin-top: 5%;
+                margin-left: 10px;
                 background-color:rgb(150,0,200);
-                top 500px;
                 transition:all ease-in-out 0.6s;
-            }align-content
+            }
 
 
         </style>
