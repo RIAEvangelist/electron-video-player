@@ -19,7 +19,9 @@ body *{
     transition: background-color ease-in-out 600ms,
                 border-redius ease-in-out 1000ms,
                 top ease-in-out 600ms,
-                left ease-in-out 1000ms;
+                left ease-in-out 1000ms,
+                width ease-in-out 1000ms,
+                height ease-in-out 1000ms;
 }
 .poop{
     width:90px;
