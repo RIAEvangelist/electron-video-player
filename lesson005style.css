@@ -6,6 +6,19 @@ body*{
     position:relative;
 }
 
+.scrubber{
+    position: relative;
+    width: 560px;
+    height: 20px;
+    background-color: black;
+}
+
+.progress{
+    width: 0;
+    height: 20px;
+    background-color: red;
+}
+
 .video{
     position: relative;
     height: 500px;
