@@ -34,3 +34,11 @@ function bindEvents(){
         }
     );
 }
+
+function progress(){
+
+    var progBar = document.getElementsByClassName('scrubber')[0];
+    var srub = document.getElementsByClassName('progress')[0];
+
+}
+
