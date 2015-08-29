@@ -11,9 +11,7 @@ function bindEvents(){
     var video = document.getElementsByClassName('video')[0];
     var progBar = document.getElementsByClassName('scrubber')[0];
     var scrub = document.getElementsByClassName('progress')[0];
-    var v = document.getElementsByClassName('video')[0];
-
-    scrub.addEventListener(
+    .addEventListener(
         'click',
         console.log(':)')
     );
