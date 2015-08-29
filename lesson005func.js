@@ -8,10 +8,11 @@ function init(){
 }
 
 function bindEvents(){
+    var video = document.getElementsByClassName('video')[0];
     document.querySelector('#controls').addEventListener(
         'click',
         function(e){
-            var demo=document.getElementById('video');
+            var demo=document.getElementsByClassName('video')[0];
 
             switch(e.target.id){
                 case 'play' :
@@ -27,6 +28,7 @@ function bindEvents(){
                     demo.volume-=0.1;
                     break;
                 case 'change' :
+                    video.classList.toggle('poop');
                     break;
             }
         }

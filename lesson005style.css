@@ -6,8 +6,19 @@ body*{
     position:relative;
 }
 
-video{
+.video{
     position: relative;
+    height: 500px;
+    width:500px;
     top: 0%;
     left: 0%;
+    transition: width ease-in-out 500ms,
+                height ease-in-out 500ms;
+}
+
+.poop{
+
+    height: 300px;
+    width 300px;
+
 }
