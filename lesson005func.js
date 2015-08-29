@@ -9,6 +9,15 @@ function init(){
 
 function bindEvents(){
     var video = document.getElementsByClassName('video')[0];
+    var progBar = document.getElementsByClassName('scrubber')[0];
+    var srub = document.getElementsByClassName('progress')[0];
+    var v = document.getElementsByClassName('video')[0];
+
+    srub.addEventListener(
+        'click',
+        console.log(':)');
+    );
+
     document.querySelector('#controls').addEventListener(
         'click',
         function(e){
@@ -33,23 +42,8 @@ function bindEvents(){
             }
         }
     );
-}
-
-function progress(){
-
-    var progBar = document.getElementsByClassName('scrubber')[0];
-    var srub = document.getElementsByClassName('progress')[0];
-    var v = document.getElementsByClassName('video')[0];
-
-    progBar.addEventListener(
-        'click',
-        logit
-        );
 
 }
 
-function logit(){
-    console.log('yo');
 
-}
 
