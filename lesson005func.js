@@ -12,11 +12,6 @@ function bindEvents(){
     var progBar = document.getElementsByClassName('scrubber')[0];
     var scrub = document.getElementsByClassName('progress')[0];
 
-    scrub.addEventListener(
-        'click',
-        console.log(':)')
-    );
-
     document.querySelector('#controls').addEventListener(
         'click',
         function(e){
