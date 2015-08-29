@@ -10,31 +10,29 @@ function init(){
 function bindEvents(){
     var video = document.getElementsByClassName('video')[0];
     var progBar = document.getElementsByClassName('scrubber')[0];
-    var srub = document.getElementsByClassName('progress')[0];
+    var scrub = document.getElementsByClassName('progress')[0];
     var v = document.getElementsByClassName('video')[0];
 
-    srub.addEventListener(
+    scrub.addEventListener(
         'click',
-        console.log(':)');
+        console.log(':)')
     );
 
     document.querySelector('#controls').addEventListener(
         'click',
         function(e){
-            var demo=document.getElementsByClassName('video')[0];
-
             switch(e.target.id){
                 case 'play' :
-                    demo.play();
+                    video.play();
                     break;
                 case 'pause' :
-                    demo.pause();
+                    video.pause();
                     break;
                 case 'volU' :
-                    demo.volume+=0.1;
+                    video.volume+=0.1;
                     break;
                 case 'volD' :
-                    demo.volume-=0.1;
+                    video.volume-=0.1;
                     break;
                 case 'change' :
                     video.classList.toggle('poop');
