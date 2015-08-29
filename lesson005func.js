@@ -39,6 +39,12 @@ function progress(){
 
     var progBar = document.getElementsByClassName('scrubber')[0];
     var srub = document.getElementsByClassName('progress')[0];
+    var v = document.getElementsByClassName('video')[0];
+
+    progBar.addEventListener(
+        'click',
+        console.log('bar was clicked!')
+        );
 
 }
 
