@@ -43,8 +43,13 @@ function progress(){
 
     progBar.addEventListener(
         'click',
-        console.log('bar was clicked!')
+        logit
         );
+
+}
+
+function logit(){
+    console.log('yo');
 
 }
 
