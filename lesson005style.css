@@ -55,14 +55,22 @@ button[class^="icon-"], [class*=" icon-"] {
 }
 
 .controls{
-    color:rgb(100,100,100);
     position:absolute;
     bottom:0;
     left:0;
     width:100%;
+    opacity:0;
+    transition:opacity 600ms ease-in;
+}
+
+.controls:hover{
+    opacity:1;
 }
 
 .controls button{
+    color:rgb(180,180,180);
     border:none;
-    background:rgb(50,50,50);
+    background:transparent;
+    margin:0;
+    padding:5px;
 }
