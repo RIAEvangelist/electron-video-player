@@ -4,6 +4,9 @@ html, body{
     margin:0;
     padding:0;
     overflow:hidden;
+    color:rgb(180,180,180);
+    -webkit-user-select: none;
+    font-family: ubuntu,helvetica,arial;
 }
 body *{
     position:relative;
@@ -28,6 +31,10 @@ button[class^="icon-"], [class*=" icon-"] {
     font-smoothing: antialiased;
 }
 
+input{
+    border:none;
+}
+
 .icon-play:before {
 	content: "\e603";
 }
@@ -50,9 +57,37 @@ button[class^="icon-"], [class*=" icon-"] {
     width:100%;
 }
 
+.draggable{
+    -webkit-app-region: drag;
+}
+
 .video{
     width:100%;
     height:100%;
+}
+
+button{
+    -webkit-app-region: no-drag;
+    transition: color 300ms;
+    outline:none;
+    cursor: pointer;
+    color:rgb(180,180,180);
+    border:none;
+    background:transparent;
+    margin:0;
+    padding:5px;
+    font-size:20px;
+    width:5%;
+}
+
+button:hover{
+    color:rgb(255,255,255);
+}
+
+.close{
+    position: absolute;
+    top:10px;
+    right:10px;
 }
 
 .controls{
@@ -65,27 +100,13 @@ button[class^="icon-"], [class*=" icon-"] {
     padding: 10px 0 5px;
     box-shadow: 0 -9px 12px rgba(0,0,0,.8);
     background:rgba(0,0,0,.7);
+    -webkit-app-region: no-drag;
 }
 
+.player.paused .close,
+.player.paused .controls,
 .controls:hover{
     opacity:1;
-}
-
-.controls button{
-    color:rgb(180,180,180);
-    border:none;
-    background:transparent;
-    margin:0;
-    padding:5px;
-    font-size:20px;
-    width:5%;
-    outline:none;
-    transition: color 300ms;
-    cursor: pointer;
-}
-
-.controls button{
-    color:rgb(255,255,255);
 }
 
 .progress{
@@ -111,4 +132,51 @@ button[class^="icon-"], [class*=" icon-"] {
 
 .hide{
     display:none;
+}
+
+.hidden{
+    opacity:0;
+}
+
+.dropArea{
+    width:calc(50% - 60px);
+    height:calc(50% - 90px);
+    overflow:hidden;
+    position:absolute;
+    border:5px dashed rgba(180,180,180,.7);
+    border-radius:20px;
+    padding:10px;
+    position:absolute;
+    top:25%;
+    left:25%;
+    background:rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgb(0,0,0);
+    transition: opacity 500ms ease-out;
+    -webkit-app-region: no-drag;
+}
+
+.dropZone{
+    width:100%;
+    font-size:30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.fileChooser{
+    width:76%;
+    left:11%;
+    background: rgb(80,80,80);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.enterLink{
+    width:calc(76% - 10px);
+    left:11%;
+    background: rgb(210,210,210);
+    color:rgb(40,40,40);
+    box-shadow: 0 0 4px rgba(0,0,0,.5) inset;
+    border-radius: 10px;
+    font-size:18px;
+    padding:5px;
 }

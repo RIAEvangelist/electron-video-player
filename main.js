@@ -20,13 +20,14 @@ app.on(
         player = new BrowserWindow(
             {
                 width: 640,
-                height: 480
+                height: 480,
+                frame:false
             }
         );
 
         player.loadUrl('file://' + __dirname + '/player.html');
 
-        player.openDevTools();
+        //player.openDevTools();
 
         player.on(
             'closed',

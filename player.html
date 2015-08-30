@@ -5,9 +5,9 @@
         <script src ='lib/player.js' ></script>
     </head>
     <body>
-        <section id='player' class='player'>
-            <video id='video' class='video' src='http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm' ></video>
-            <div id='controls' class='controls'>
+        <section id='playerContainer' class='player paused'>
+            <video id='videoContainer' class='video draggable' src='#' ></video>
+            <div id='controlContainer' class='controls'>
                 <button id='play' class='play icon-play'></button>
                 <button id='pause' class='hide pause icon-pause'></button>
                 <progress id ='prog' class='progress' ></progress>
@@ -15,6 +15,27 @@
                 <button id='volU' class='icon-vol2'></button>
                 <button id='change' class='icon-fullscreen'></button>
             </div>
+            <section id='dropArea' class='dropArea'>
+                <div class='dropZone'>
+                    Drag and Drop
+                    <br/>
+                    video here
+                </div>
+                <button id='fileChooser' class='fileChooser'>
+                    Choose File
+                </button>
+                <input type='text'
+                       id='enterLink'
+                       class='enterLink'
+                       placeholder='URL or path'
+                />
+                <input type='file'
+                       accept="video/*"
+                       id='chooseVideo'
+                       class='chooseVideo hide'
+                />
+            </section>
+            <button id='close' class='close'>X</button>
         </section>
     </body>
 </html>
