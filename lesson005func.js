@@ -19,13 +19,16 @@ function bindEvents(){
                 }
     );
 
-    document.querySelector('#controls').addEventListener(
+    document.querySelector('#player').addEventListener(
         'click',
         function(e){
             if(!e.target.id || e.target.id=='controls'){
                 return;
             }
             switch(e.target.id){
+                case 'video' :
+                    document.querySelector('.play:not(.hide),.pause:not(.hide)').click();
+                    break;
                 case 'play' :
                     video.play();
                     e.target.classList.add('hide');

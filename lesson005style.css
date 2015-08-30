@@ -81,6 +81,8 @@ button[class^="icon-"], [class*=" icon-"] {
 .progress{
     width:77%;
     margin:0;
+    -webkit-appearance: none;
+
 }
 
 .hide{
