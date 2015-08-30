@@ -42,9 +42,8 @@ function bindEvents(){
                     video.classList.toggle('poop');
                     break;
                 case 'prog' :
-                    //prog.width = e.target.offsetWidth
                     progBar.value =(e.offsetX)/159
-                    video.currentTime = ((e.offsetX)/159)*video.duration;
+                    video.currentTime = ((e.offsetX)/e.target.offsetWidth)*video.duration;
                     break;
                 default :
                     console.log('stop half assing shit.');
