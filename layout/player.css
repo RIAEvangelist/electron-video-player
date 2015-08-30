@@ -11,7 +11,7 @@ body *{
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('font/icomoon.ttf?97c8rs') format('truetype');
+	src:url('../font/icomoon.ttf?97c8rs') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -77,7 +77,15 @@ button[class^="icon-"], [class*=" icon-"] {
     background:transparent;
     margin:0;
     padding:5px;
+    font-size:20px;
     width:5%;
+    outline:none;
+    transition: color 300ms;
+    cursor: pointer;
+}
+
+.controls button{
+    color:rgb(255,255,255);
 }
 
 .progress{
