@@ -33,10 +33,14 @@ function bindEvents(){
                     video.pause();
                     break;
                 case 'volU' :
-                    video.volume+=0.1;
+                    if (video.volume <1 && video.volume >0){
+                        video.volume+=0.1;
+                    };
                     break;
                 case 'volD' :
-                    video.volume-=0.1;
+                    if (video.volume <1 && video.volume >0){
+                        video.volume-=0.1;
+                    };
                     break;
                 case 'change' :
                     video.classList.toggle('poop');
