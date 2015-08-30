@@ -100,6 +100,7 @@ button:hover{
     padding: 10px 0 5px;
     box-shadow: 0 -9px 12px rgba(0,0,0,.8);
     background:rgba(0,0,0,.7);
+    -webkit-app-region: no-drag;
 }
 
 .player.paused .close,
@@ -133,6 +134,10 @@ button:hover{
     display:none;
 }
 
+.hidden{
+    opacity:0;
+}
+
 .dropArea{
     width:calc(50% - 60px);
     height:calc(50% - 90px);
@@ -146,6 +151,7 @@ button:hover{
     left:25%;
     background:rgba(0,0,0,.7);
     box-shadow: 0 0 10px rgb(0,0,0);
+    transition: opacity 500ms ease-out;
     -webkit-app-region: no-drag;
 }
 
