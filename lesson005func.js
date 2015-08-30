@@ -33,12 +33,12 @@ function bindEvents(){
                     video.pause();
                     break;
                 case 'volU' :
-                    if (video.volume <1 && video.volume >0){
+                    if (video.volume <1){
                         video.volume+=0.1;
                     };
                     break;
                 case 'volD' :
-                    if (video.volume <1 && video.volume >0){
+                    if (video.volume >0){
                         video.volume-=0.1;
                     };
                     break;
@@ -46,7 +46,6 @@ function bindEvents(){
                     video.classList.toggle('poop');
                     break;
                 case 'prog' :
-                    progBar.value =(e.offsetX)/159
                     video.currentTime = ((e.offsetX)/e.target.offsetWidth)*video.duration;
                     break;
                 default :
