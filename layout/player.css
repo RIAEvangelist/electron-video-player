@@ -111,6 +111,19 @@ button:hover{
     opacity:1;
 }
 
+.mute,
+.volume{
+    width:25px;
+}
+
+.player.muted .mute{
+    color:rgb(210,210,255);
+}
+
+.player.muted .volume{
+    color:rgb(90,90,90);
+}
+
 .progress{
     width:77%;
     margin:0;
