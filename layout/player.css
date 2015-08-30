@@ -107,6 +107,7 @@ button:hover{
 }
 
 .player.paused .close,
+.close:hover,
 .player.paused .controls,
 .controls:hover{
     opacity:1;
@@ -148,6 +149,16 @@ button:hover{
     border-radius: 3px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5) inset;
     opacity:.7;
+}
+
+.volRange{
+    position:absolute;
+    bottom:30px;
+    right:0;
+    width:calc(5% + 60px);
+    box-shadow: 0 -9px 12px rgba(0,0,0,.8);
+    background:rgba(0,0,0,.7);
+    border:1px solid rgb(40,40,40);
 }
 
 .hide{
