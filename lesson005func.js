@@ -9,14 +9,13 @@ function init(){
 
 function bindEvents(){
     var video = document.querySelector('video');
-    var progBar = document.querySelector('prog');
+    var progBar = document.querySelector('progress');
     progBar.value = 0; //initialize video to start and aviod cyborg eye
 
     video.addEventListener(
         'timeupdate',
         function()
-                {
-                    progBar.value=(video.currentTime/video.duration);
+                {progBar.value=(video.currentTime/video.duration);
                 }
     );
 
@@ -41,6 +40,9 @@ function bindEvents(){
                     break;
                 case 'change' :
                     video.classList.toggle('poop');
+                    break;
+                case 'prog' :
+                    console.log("hello");
                     break;
                 default :
                     console.log('stop half assing shit.');
