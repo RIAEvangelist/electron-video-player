@@ -12,6 +12,5 @@ This project started as a simple HTML5 video player lesson for @MaybeRex which I
 ![electron video player](https://github.com/RIAEvangelist/electron-video-player/blob/master/screenshots/elPlay-s.png)  
 ![electron video player](https://github.com/RIAEvangelist/electron-video-player/blob/master/screenshots/paused.png)  
 ![electron video player](https://github.com/RIAEvangelist/electron-video-player/blob/master/screenshots/fsPlaying.png)  
-![electron video player](https://github.com/RIAEvangelist/electron-video-player/blob/master/screenshots/smallPlaying.png)  
-![electron video player](https://github.com/RIAEvangelist/electron-video-player/blob/master/screenshots/smControls.png)  
-![electron video player](https://github.com/RIAEvangelist/electron-video-player/blob/master/screenshots/smallplaying.png)  
+![electron video player](https://github.com/RIAEvangelist/electron-video-player/blob/master/screenshots/smallplaying.png)   
+![electron video player](https://github.com/RIAEvangelist/electron-video-player/blob/master/screenshots/smControls.png)   
