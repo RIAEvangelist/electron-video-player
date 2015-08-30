@@ -28,9 +28,13 @@ function bindEvents(){
             switch(e.target.id){
                 case 'play' :
                     video.play();
+                    e.target.classList.add('hide');
+                    document.querySelector('.pause').classList.remove('hide');
                     break;
                 case 'pause' :
                     video.pause();
+                    e.target.classList.add('hide');
+                    document.querySelector('.play').classList.remove('hide');
                     break;
                 case 'volU' :
                     if (video.volume <1){
