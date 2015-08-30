@@ -62,11 +62,13 @@ button[class^="icon-"], [class*=" icon-"] {
     width:100%;
     opacity:0;
     transition:opacity 600ms ease-in;
+    padding: 10px 0 5px;
+    box-shadow: 0 -9px 12px rgba(0,0,0,.8);
+    background:rgba(0,0,0,.7);
 }
 
 .controls:hover{
     opacity:1;
-    background:rgba(0,0,0,.7);
 }
 
 .controls button{
@@ -82,7 +84,21 @@ button[class^="icon-"], [class*=" icon-"] {
     width:77%;
     margin:0;
     -webkit-appearance: none;
+    height:25px;
+}
 
+.progress::-webkit-progress-bar {
+    background-color:rgb(100,100,100);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) inset;
+    opacity:.5;
+}
+
+.progress::-webkit-progress-value {
+    background:rgb(180,180,180);
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5) inset;
+    opacity:.7;
 }
 
 .hide{
