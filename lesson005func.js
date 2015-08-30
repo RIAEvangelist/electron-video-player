@@ -10,7 +10,7 @@ function init(){
 function bindEvents(){
     var video = document.querySelector('video');
     var progBar = document.querySelector('progress');
-    progBar = 0; //initialize video to start and aviod cyborg eye
+    progBar.value = 0; //initialize video to start and aviod cyborg eye
 
     video.addEventListener(
         'timeupdate',
