@@ -1,8 +1,10 @@
- body{
+html body{
     width: 100%;
     height: 100%;
+    margin:0;
+    padding:0;
 }
-body*{
+body *{
     position:relative;
 }
 
@@ -41,17 +43,26 @@ button[class^="icon-"], [class*=" icon-"] {
 	content: "\e607";
 }
 
-.video{
-    position: relative;
-    height: 500px;
-    width:500px;
-    top: 0%;
-    left: 0%;
-    transition: width ease-in-out 500ms,
-                height ease-in-out 500ms;
+.player{
+    background:rgb(0,0,0);
+    height: 480px;
+    width:640px;
 }
 
-.poop{
-    height: 300px;
-    width 300px;
+.video{
+    width:100%;
+    height:100%;
+}
+
+.controls{
+    color:rgb(100,100,100);
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+.controls button{
+    border:none;
+    background:rgb(50,50,50);
 }

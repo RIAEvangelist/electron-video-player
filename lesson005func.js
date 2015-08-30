@@ -42,7 +42,7 @@ function bindEvents(){
                     video.classList.toggle('poop');
                     break;
                 case 'prog' :
-                    console.log("hello");
+                    console.log(e);
                     break;
                 default :
                     console.log('stop half assing shit.');
