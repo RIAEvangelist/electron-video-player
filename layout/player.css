@@ -4,6 +4,9 @@ html, body{
     margin:0;
     padding:0;
     overflow:hidden;
+    color:rgb(180,180,180);
+    -webkit-user-select: none;
+    font-family: ubuntu,helvetica,arial;
 }
 body *{
     position:relative;
@@ -51,7 +54,6 @@ button[class^="icon-"], [class*=" icon-"] {
 }
 
 .draggable{
-    -webkit-user-select: none;
     -webkit-app-region: drag;
 }
 
@@ -62,6 +64,20 @@ button[class^="icon-"], [class*=" icon-"] {
 
 button{
     -webkit-app-region: no-drag;
+    transition: color 300ms;
+    outline:none;
+    cursor: pointer;
+    color:rgb(180,180,180);
+    border:none;
+    background:transparent;
+    margin:0;
+    padding:5px;
+    font-size:20px;
+    width:5%;
+}
+
+button:hover{
+    color:rgb(255,255,255);
 }
 
 .close{
@@ -88,21 +104,6 @@ button{
     opacity:1;
 }
 
-.close,
-.controls button{
-    color:rgb(180,180,180);
-    border:none;
-    background:transparent;
-    margin:0;
-    padding:5px;
-    font-size:20px;
-    width:5%;
-    outline:none;
-    transition: color 300ms;
-    cursor: pointer;
-    color:rgb(255,255,255);
-}
-
 .progress{
     width:77%;
     margin:0;
@@ -126,4 +127,41 @@ button{
 
 .hide{
     display:none;
+}
+
+.dropArea{
+    width:calc(50% - 60px);
+    height:calc(50% - 90px);
+    overflow:hidden;
+    position:absolute;
+    border:5px dashed rgba(180,180,180,.7);
+    border-radius:20px;
+    padding:10px;
+    position:absolute;
+    top:25%;
+    left:25%;
+    background:rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgb(0,0,0);
+    -webkit-app-region: no-drag;
+}
+
+.dropZone{
+    width:100%;
+    font-size:30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.fileChooser{
+    width:76%;
+    left:11%;
+    background: rgb(80,80,80);
+    border-radius: 10px;
+}
+
+.enterLink{
+    width:76%;
+    left:11%;
+    background: rgb(80,80,80);
+    border-radius: 10px;
 }
