@@ -1,7 +1,7 @@
 window.addEventListener(
     'DOMContentLoaded',
     init
-)
+);
 
 function init(){
     bindEvents();
@@ -10,10 +10,8 @@ function init(){
 function bindEvents(){
     var video = document.querySelector('video');
     var progBar = document.querySelector('progress');
-    progBar.addEventListener(
-        'click',
-        console.log("gets here")
-    );
+    console.log(video.currentTime);
+
     document.querySelector('#controls').addEventListener(
         'click',
         function(e){
