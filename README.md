@@ -1,3 +1,0 @@
-# YOLO-SWAG-Comm
-Repositiry for sending code to be debugged, shared...
-Just to share code.. nothing to see here folks move along
