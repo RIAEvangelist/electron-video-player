@@ -39,6 +39,8 @@ function bindEvents(){
                 case 'change' :
                     video.classList.toggle('poop');
                     break;
+                default :
+                    console.log('stop half assing shit.');
             }
         }
     );
