@@ -14,7 +14,10 @@ function bindEvents(){
 
     video.addEventListener(
         'timeupdate',
-        function(){progBar.value=(video.currentTime/video.duration);}
+        function()
+                {
+                    progBar.value=(video.currentTime/video.duration);
+                }
     );
 
     document.querySelector('#controls').addEventListener(
