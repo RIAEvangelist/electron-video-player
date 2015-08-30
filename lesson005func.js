@@ -8,9 +8,9 @@ function init(){
 }
 
 function bindEvents(){
-    var video = document.getElementsByClassName('video')[0];
-    var progBar = document.getElementsByClassName('scrubber')[0];
-    var scrub = document.getElementsByClassName('progress')[0];
+    var video = document.querySelector('video');
+    var progBar = document.querySelector('scrubber');
+    var scrub = document.querySelector('progress');
 
     document.querySelector('#controls').addEventListener(
         'click',
