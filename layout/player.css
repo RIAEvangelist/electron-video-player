@@ -90,6 +90,7 @@ button:hover{
     right:10px;
     opacity:0;
     transition:opacity 600ms ease-in;
+    text-align: right;
 }
 
 .controls{
@@ -124,8 +125,12 @@ button:hover{
     color:rgb(90,90,90);
 }
 
+.fullscreen{
+    text-align: right;
+}
+
 .progress{
-    width:77%;
+    width:calc(90% - 70px);
     margin:0;
     -webkit-appearance: none;
     height:25px;
