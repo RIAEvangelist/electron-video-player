@@ -23,6 +23,9 @@ function bindEvents(){
     document.querySelector('#controls').addEventListener(
         'click',
         function(e){
+            if(!e.target.id){
+                return;
+            }
             switch(e.target.id){
                 case 'play' :
                     video.play();
