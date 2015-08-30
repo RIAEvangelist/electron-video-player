@@ -88,6 +88,8 @@ button:hover{
     position: absolute;
     top:10px;
     right:10px;
+    opacity:0;
+    transition:opacity 600ms ease-in;
 }
 
 .controls{
