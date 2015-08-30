@@ -10,7 +10,11 @@ function init(){
 function bindEvents(){
     var video = document.querySelector('video');
     var progBar = document.querySelector('progress');
-    console.log(video.currentTime);
+
+    video.addEventListener(
+        'timeupdate',
+        function(){console.log('why');}
+    );
 
     document.querySelector('#controls').addEventListener(
         'click',
