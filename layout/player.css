@@ -31,6 +31,10 @@ button[class^="icon-"], [class*=" icon-"] {
     font-smoothing: antialiased;
 }
 
+input{
+    border:none;
+}
+
 .icon-play:before {
 	content: "\e603";
 }
@@ -157,11 +161,16 @@ button:hover{
     left:11%;
     background: rgb(80,80,80);
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .enterLink{
-    width:76%;
+    width:calc(76% - 10px);
     left:11%;
-    background: rgb(80,80,80);
+    background: rgb(210,210,210);
+    color:rgb(40,40,40);
+    box-shadow: 0 0 4px rgba(0,0,0,.5) inset;
     border-radius: 10px;
+    font-size:18px;
+    padding:5px;
 }
