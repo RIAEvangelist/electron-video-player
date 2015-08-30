@@ -6,6 +6,41 @@ body*{
     position:relative;
 }
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('font/icomoon.ttf?97c8rs') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+button[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+.icon-play:before {
+	content: "\e603";
+}
+.icon-pause:before {
+	content: "\e604";
+}
+.icon-fullscreen:before {
+	content: "\e605";
+}
+.icon-vol:before {
+	content: "\e606";
+}
+.icon-vol2:before {
+	content: "\e607";
+}
+
 .video{
     position: relative;
     height: 500px;
@@ -17,8 +52,6 @@ body*{
 }
 
 .poop{
-
     height: 300px;
     width 300px;
-
 }
