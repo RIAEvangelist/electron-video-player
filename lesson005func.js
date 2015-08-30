@@ -23,7 +23,7 @@ function bindEvents(){
     document.querySelector('#controls').addEventListener(
         'click',
         function(e){
-            if(!e.target.id){
+            if(!e.target.id || e.target.id=='controls'){
                 return;
             }
             switch(e.target.id){
