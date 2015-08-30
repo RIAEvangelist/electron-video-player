@@ -67,6 +67,7 @@ button[class^="icon-"], [class*=" icon-"] {
     background:rgba(0,0,0,.7);
 }
 
+.player.paused .controls,
 .controls:hover{
     opacity:1;
 }
