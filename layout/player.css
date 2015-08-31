@@ -171,7 +171,8 @@ button:hover{
 .count{
     position: absolute;
     left: calc(5% + 10px);
-    top: 15px;
+    top: 13px;
+    line-height: 25px;
 
 }
 
