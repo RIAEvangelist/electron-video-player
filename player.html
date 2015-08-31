@@ -6,11 +6,12 @@
     </head>
     <body>
         <section id='playerContainer' class='player paused'>
-            <video id='videoContainer' class='video draggable' src='#' ></video>
+            <video id='videoContainer' class='video draggable' ></video>
             <div id='controlContainer' class='controls'>
                 <button id='play' class='play icon-play'></button>
                 <button id='pause' class='hide pause icon-pause'></button>
                 <progress id ='prog' class='progress' ></progress>
+                <div id = 'count' class = 'count'></div>
                 <button id='mute' class='icon-vol mute'></button>
                 <button id='volume' class='icon-vol2 volume'></button>
                 <input type='range'
@@ -44,6 +45,9 @@
                 />
             </section>
             <button id='close' class='close'>X</button>
+            <section id='error' class='error hide hidden'>
+                <h1 id='errorMessage'></h1>
+            </section>
         </section>
     </body>
 </html>
