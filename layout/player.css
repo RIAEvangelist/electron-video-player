@@ -168,6 +168,13 @@ button:hover{
     opacity:.7;
 }
 
+.count{
+    position: absolute;
+    left: calc(5% + 10px);
+    top: 15px;
+
+}
+
 .volRange{
     position:absolute;
     bottom:30px;
