@@ -137,7 +137,7 @@ button:hover{
 }
 
 .player.fullscreened .smallscreen{
-    display: block;
+    display: inline-block;
 }
 
 .player.fullscreened .fullscreen{
