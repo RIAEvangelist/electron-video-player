@@ -50,6 +50,9 @@ input{
 .icon-vol2:before {
 	content: "\e607";
 }
+.icon-fullscreen-exit:before {
+	content: "\e600";
+}
 
 .player{
     background:rgb(0,0,0);
@@ -78,6 +81,7 @@ button{
     padding:5px;
     font-size:20px;
     width:5%;
+    overflow: hidden;
 }
 
 button:hover{
@@ -128,6 +132,19 @@ button:hover{
 
 .fullscreen{
     text-align: right;
+}
+
+.smallscreen{
+    text-align: right;
+    display: none;
+}
+
+.player.fullscreened .smallscreen{
+    display: inline-block;
+}
+
+.player.fullscreened .fullscreen{
+    display: none;
 }
 
 .progress{
