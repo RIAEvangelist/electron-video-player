@@ -132,6 +132,15 @@ button:hover{
 
 .smallscreen{
     text-align: right;
+    display: none;
+}
+
+.player.fullscreened .smallscreen{
+    display: block;
+}
+
+.player.fullscreened .fullscreen{
+    display: none;
 }
 
 .progress{

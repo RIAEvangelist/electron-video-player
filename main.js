@@ -27,7 +27,7 @@ app.on(
 
         player.loadUrl('file://' + __dirname + '/player.html');
 
-        //player.openDevTools();
+        player.openDevTools();
 
         player.on(
             'closed',
@@ -40,12 +40,3 @@ app.on(
 
 
 
-//IPC stuff
-
-var ipc = require('ipc');
-ipc.on('asynchronous-message', function() {
-  event.sender.send(BrowserWindow);
-});
-
-ipc.on('synchronous-message', function() {
-});
