@@ -19,9 +19,15 @@ app.on(
     function() {
         player = new BrowserWindow(
             {
+                title:'Electron Video Player',
+                'accept-first-mouse':true,
                 width: 640,
                 height: 480,
-                frame:false
+                'min-width': 640,
+                'min-height': 480,
+                frame:false,
+                icon:__dirname+'/img/logo-256.png',
+                'text-areas-are-resizable':false
             }
         );
 
