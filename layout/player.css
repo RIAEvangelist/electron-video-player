@@ -10,6 +10,11 @@ html, body{
 }
 body *{
     position:relative;
+    cursor:default;
+}
+
+input[type='text']{
+    cursor: text;
 }
 
 @font-face {
@@ -227,4 +232,34 @@ button:hover{
     border-radius: 10px;
     font-size:18px;
     padding:5px;
+}
+
+.error{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:rgba(100,50,50,.7);
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+    transition:opacity 300ms;
+}
+
+.error h1{
+    position:absolute;
+    top:calc(50% - 75px);
+    left:0;
+    height:150px;
+    width:100%;
+    line-height: 150px;
+    background:rgba(200,150,150,.9);
+    font-size:55px;
+    text-align: center;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    text-shadow: 0 0 3px rgb(0,0,0);
+    box-shadow: 0 0 10px rgb(0,0,0);
+    cursor: pointer;
 }
