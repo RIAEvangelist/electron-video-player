@@ -3,6 +3,15 @@
 
 The electron video player is developed to be a simple and intuitive desktop app with supprt for Windows, Mac and Linux. It plays video files from both your local machine and the interwebs. It was developed using [GitHub's Electron](https://github.com/atom/electron)
 
+# known supported video types
+- mp4
+- webm
+- ogg
+- mov (MPEG4 | H.264)
+- avi (MPEG4 | H.264)
+- mkv (MPEG4 | H.264)
+- m4v (MPEG4 | H.264)
+
 # video player shortcuts
 
 |key|action|
