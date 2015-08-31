@@ -50,6 +50,9 @@ input{
 .icon-vol2:before {
 	content: "\e607";
 }
+.icon-fullscreen-exit:before {
+	content: "\e600";
+}
 
 .player{
     background:rgb(0,0,0);
