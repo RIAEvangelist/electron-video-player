@@ -49,6 +49,11 @@ function bindEvents(){
     );
 
     dropArea.addEventListener(
+        'dragleave',
+        makeUnDroppable
+    );
+
+    dropArea.addEventListener(
         'dragenter',
         makeDroppable
     );
@@ -205,6 +210,12 @@ function ended(e){
 
 function makeDroppable(e) {
     e.preventDefault();
+    e.target.classList.add('droppableArea');
+};
+
+function makeUnDroppable(e) {
+    e.preventDefault();
+    e.target.classList.remove('droppableArea');
 };
 
 function loadVideo(e) {
@@ -222,13 +233,20 @@ function loadVideo(e) {
             }
         ];
     }
-    //handle playlist
+
+    //@ToDo handle playlist
     for (var i=0; i<files.length; i++) {
         console.log(files[i]);
         if(files[i].type.indexOf('video')>-1){
             var video = document.querySelector('video');
             video.src=files[i].path;
-            document.querySelector('.play:not(.hide),.pause:not(.hide)').click();
+            setTimeout(
+                function(){
+                    document.querySelector('.dropArea').classList.remove('droppableArea');
+                    document.querySelector('.play:not(.hide),.pause:not(.hide)').click();
+                },
+                250
+            );
         }
     };
 };

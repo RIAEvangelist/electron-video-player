@@ -27,7 +27,7 @@ app.on(
 
         player.loadUrl('file://' + __dirname + '/player.html');
 
-        player.openDevTools();
+        //player.openDevTools();
 
         player.on(
             'closed',

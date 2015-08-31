@@ -200,19 +200,21 @@ button:hover{
 }
 
 .dropArea{
-    width:calc(50% - 60px);
-    height:calc(50% - 90px);
+    width:300px;
+    height:160px;
     overflow:hidden;
     position:absolute;
     border:5px dashed rgba(180,180,180,.7);
     border-radius:20px;
     padding:10px;
     position:absolute;
-    top:25%;
-    left:25%;
+    top:calc(50% - 105px);
+    left:calc(50% - 160px);
     background:rgba(0,0,0,.7);
     box-shadow: 0 0 10px rgb(0,0,0);
-    transition: opacity 500ms ease-out;
+    transition: opacity 500ms ease-out,
+        border-radius 300ms,
+        background-color 300ms;
     -webkit-app-region: no-drag;
 }
 
@@ -221,6 +223,13 @@ button:hover{
     font-size:30px;
     text-align: center;
     margin-bottom: 10px;
+    pointer-events: none;
+}
+
+.dropArea.droppableArea{
+    border-radius:5px;
+    border-color:rgba(180,220,180,.7);
+    background:rgba(20,50,20,.7);
 }
 
 .fileChooser{
