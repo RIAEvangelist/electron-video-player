@@ -7,12 +7,12 @@ var options={
     version:'0.31.1',
     out:'./build/',
     'app-bundle-id':'it.diginow.electronvideoplayer',
-    'app-version':true,
+    'app-version':'1.0.0',
     overwrite:true,
     icon:__dirname+'/src/img/logo-256.png',
     'version-string':{
         CompanyName:'digiNow inc.',
-        ProductVersion:'0.0.1',
+        ProductVersion:'1.0.0',
         ProductName:'Electron Video Player'
     }
 }
