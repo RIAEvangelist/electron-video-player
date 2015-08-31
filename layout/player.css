@@ -130,6 +130,10 @@ button:hover{
     text-align: right;
 }
 
+.smallscreen{
+    text-align: right;
+}
+
 .progress{
     width:calc(90% - 70px);
     margin:0;
