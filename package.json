@@ -1,0 +1,25 @@
+{
+  "name": "electron-video-player",
+  "productName": "Electron Video Player",
+  "description": "Video player for local and remote files",
+  "version": "0.0.1",
+  "main": "app/main.js",
+  "author":"RIAEvangelist",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "electron-builder": "^10.9.3",
+    "electron":"1.4.13"
+  },
+  "license": "DBAD",
+  "build": {
+    "linux":{
+      "category": "AudioVideo",
+      "packageCategory": "video"
+    },
+    "mac":{
+      "category":"public.app-category.video"
+    }
+  }
+}

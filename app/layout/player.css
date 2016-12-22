@@ -1,0 +1,282 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    color:rgb(180,180,180);
+    -webkit-user-select: none;
+    font-family: ubuntu,helvetica,arial;
+}
+body *{
+    position:relative;
+    cursor:default;
+}
+
+input[type='text']{
+    cursor: text;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../font/icomoon.ttf?97c8rs') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+button[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+input{
+    border:none;
+}
+
+.icon-play:before {
+	content: "\e603";
+}
+.icon-pause:before {
+	content: "\e604";
+}
+.icon-fullscreen:before {
+	content: "\e605";
+}
+.icon-vol:before {
+	content: "\e606";
+}
+.icon-vol2:before {
+	content: "\e607";
+}
+.icon-fullscreen-exit:before {
+	content: "\e600";
+}
+
+.player{
+    background:rgb(0,0,0);
+    height:100%;
+    width:100%;
+}
+
+.draggable{
+    -webkit-app-region: drag;
+}
+
+.video{
+    width:100%;
+    height:100%;
+}
+
+button{
+    -webkit-app-region: no-drag;
+    transition: color 300ms;
+    outline:none;
+    cursor: pointer;
+    color:rgb(180,180,180);
+    border:none;
+    background:transparent;
+    margin:0;
+    padding:5px;
+    font-size:20px;
+    width:5%;
+    overflow: hidden;
+}
+
+button:hover{
+    color:rgb(255,255,255);
+}
+
+.close{
+    position: absolute;
+    top:10px;
+    right:10px;
+    opacity:0;
+    transition:opacity 600ms ease-in;
+    text-align: right;
+}
+
+.controls{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    opacity:0;
+    transition:opacity 600ms ease-in;
+    padding: 10px 0 5px;
+    box-shadow: 0 -9px 12px rgba(0,0,0,.8);
+    background:rgba(0,0,0,.7);
+    -webkit-app-region: no-drag;
+}
+
+.player.paused .close,
+.close:hover,
+.player.paused .controls,
+.controls:hover{
+    opacity:1;
+}
+
+.mute,
+.volume{
+    width:25px;
+}
+
+.player.muted .mute{
+    color:rgb(210,210,255);
+}
+
+.player.muted .volume{
+    color:rgb(90,90,90);
+}
+
+.fullscreen{
+    text-align: right;
+}
+
+.smallscreen{
+    text-align: right;
+    display: none;
+}
+
+.player.fullscreened .smallscreen{
+    display: inline-block;
+}
+
+.player.fullscreened .fullscreen{
+    display: none;
+}
+
+.progress{
+    width:calc(90% - 70px);
+    margin:0;
+    -webkit-appearance: none;
+    height:25px;
+}
+
+.progress::-webkit-progress-bar {
+    background-color:rgb(100,100,100);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) inset;
+    opacity:.5;
+}
+
+.progress::-webkit-progress-value {
+    background:rgb(180,180,180);
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5) inset;
+    opacity:.7;
+}
+
+.count{
+    position: absolute;
+    left: calc(5% + 10px);
+    top: 13px;
+    line-height: 25px;
+
+}
+
+.volRange{
+    position:absolute;
+    bottom:30px;
+    right:0;
+    width:calc(5% + 60px);
+    box-shadow: 0 -9px 12px rgba(0,0,0,.8);
+    background:rgba(0,0,0,.7);
+    border:1px solid rgb(40,40,40);
+}
+
+.hide{
+    display:none;
+}
+
+.hidden{
+    opacity:0;
+}
+
+.dropArea{
+    width:300px;
+    height:160px;
+    overflow:hidden;
+    position:absolute;
+    border:5px dashed rgba(180,180,180,.7);
+    border-radius:20px;
+    padding:10px;
+    position:absolute;
+    top:calc(50% - 105px);
+    left:calc(50% - 160px);
+    background:rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgb(0,0,0);
+    transition: opacity 500ms ease-out,
+        border-radius 300ms,
+        background-color 300ms;
+    -webkit-app-region: no-drag;
+}
+
+.dropZone{
+    width:100%;
+    font-size:30px;
+    text-align: center;
+    margin-bottom: 10px;
+    pointer-events: none;
+}
+
+.dropArea.droppableArea{
+    border-radius:5px;
+    border-color:rgba(180,220,180,.7);
+    background:rgba(20,50,20,.7);
+}
+
+.fileChooser{
+    width:76%;
+    left:11%;
+    background: rgb(80,80,80);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.enterLink{
+    width:calc(76% - 10px);
+    left:11%;
+    background: rgb(210,210,210);
+    color:rgb(40,40,40);
+    box-shadow: 0 0 4px rgba(0,0,0,.5) inset;
+    border-radius: 10px;
+    font-size:18px;
+    padding:5px;
+}
+
+.error{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:rgba(100,50,50,.7);
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+    transition:opacity 300ms;
+}
+
+.error h1{
+    position:absolute;
+    top:calc(50% - 75px);
+    left:0;
+    height:150px;
+    width:100%;
+    line-height: 150px;
+    background:rgba(200,150,150,.9);
+    font-size:55px;
+    text-align: center;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    text-shadow: 0 0 3px rgb(0,0,0);
+    box-shadow: 0 0 10px rgb(0,0,0);
+    cursor: pointer;
+}
