@@ -3,8 +3,8 @@
 
 The electron video player is developed to be a simple and intuitive desktop app with supprt for Windows, Mac and Linux. It plays video files from both your local machine and the interwebs. It was developed using [GitHub's Electron](https://github.com/atom/electron)
 
-[builds at the bottom of this page](https://github.com/RIAEvangelist/electron-video-player/releases/tag/v1.0.0)  
-[linux AppImage](https://github.com/RIAEvangelist/electron-video-player/releases/tag/v2.0.0)
+- [builds at the bottom of this page](https://github.com/RIAEvangelist/electron-video-player/releases/tag/v1.0.0)  
+- [linux AppImage](https://github.com/RIAEvangelist/electron-video-player/releases/tag/v2.0.0)
 
 # known supported video types
 - mp4
