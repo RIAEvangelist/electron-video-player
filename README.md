@@ -1,4 +1,7 @@
-# Electron Video Player
+# [DEPRECATED] Electron Video Player
+
+This is very old, and I do not maintain it, if it works for you, woot, if not, you can commit or assist with updates as you like.
+
 ![electron video player logo](https://github.com/RIAEvangelist/electron-video-player/blob/master/app/img/logo-256.png)  
 
 The electron video player is developed to be a simple and intuitive desktop app with supprt for Windows, Mac and Linux. It plays video files from both your local machine and the interwebs. It was developed using [GitHub's Electron](https://github.com/atom/electron)
