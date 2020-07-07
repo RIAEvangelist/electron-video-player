@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "electron-builder": "^10.9.3",
-    "electron":"7.1.2"
+    "electron":"9.1.0"
   },
   "license": "DBAD",
   "build": {
